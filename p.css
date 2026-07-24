@@ -294,31 +294,25 @@ nav ul li{
 }
 
 }
-.contact-box {
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 30px;
-    background: rgba(255, 255, 255, .08);
-    backdrop-filter: blur(15px);
-    border-radius: 20px;
-    text-align: left;
-    border: 1px solid rgba(255, 255, 255, .15);
-    transition: .3s;
+..contact-card{
+    max-width:450px;
+    margin:auto;
+    padding:25px;
+    background:rgba(255,255,255,.08);
+    border-radius:20px;
+    backdrop-filter:blur(10px);
 }
 
-.contact-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(0, 212, 255, .4);
+.contact-card p{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin:15px 0;
+    word-break:break-word;
+    overflow-wrap:anywhere;
 }
 
-.contact-box p {
-    font-size: 20px;
-    margin: 30px 0;
-    color: #fff;
-}
-
-.contact-box i {
-    color: #00d4ff;
-    margin-right: 10px;
-    font-size: 22px;
+.contact-card i{
+    color:#00d4ff;
+    font-size:28px;
 }
