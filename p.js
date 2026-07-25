@@ -1,155 +1,209 @@
+// =====================
+// Loading Screen
+// =====================
+
+window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+
+    setTimeout(() => {
+        loader.style.opacity = "0";
+        loader.style.visibility = "hidden";
+    }, 1000);
+});
+
+// =====================
 // Typing Animation
-const text = [
-  "Python Developer",
-  "Web Developer",
-  "AI Enthusiast",
-  "Final Year BCS Student"
+// =====================
+
+const words = [
+    "Python Developer",
+    "Web Developer",
+    "AI Enthusiast",
+    "Software Engineer"
 ];
 
-let index = 0;
+let wordIndex = 0;
 let charIndex = 0;
 let deleting = false;
 
 const typing = document.getElementById("typing");
 
-function typeEffect() {
-  
-  if (!typing) return;
-  
-  if (!deleting) {
-    
-    typing.textContent = text[index].substring(0, charIndex + 1);
-    charIndex++;
-    
-    if (charIndex === text[index].length) {
-      deleting = true;
-      setTimeout(typeEffect, 1500);
-      return;
+function type() {
+
+    if (!typing) return;
+
+    let current = words[wordIndex];
+
+    if (!deleting) {
+
+        typing.textContent =
+        current.substring(0, charIndex++);
+
+        if (charIndex > current.length) {
+            deleting = true;
+
+            setTimeout(type, 1200);
+
+            return;
+        }
+
+    } else {
+
+        typing.textContent =
+        current.substring(0, charIndex--);
+
+        if (charIndex < 0) {
+
+            deleting = false;
+
+            wordIndex++;
+
+            if (wordIndex == words.length)
+                wordIndex = 0;
+
+        }
+
     }
-    
-  } else {
-    
-    typing.textContent = text[index].substring(0, charIndex - 1);
-    charIndex--;
-    
-    if (charIndex === 0) {
-      deleting = false;
-      index = (index + 1) % text.length;
-    }
-  }
-  
-  setTimeout(typeEffect, deleting ? 50 : 100);
+
+    setTimeout(type, deleting ? 60 : 120);
+
 }
 
-typeEffect();
+type();
 
+// =====================
+// Scroll To Top
+// =====================
 
-// Reveal Animation
-const reveals = document.querySelectorAll(
-  ".about-box,.skill-card,.card,.edu-card,form");
+const topBtn = document.getElementById("topBtn");
 
-function revealOnScroll() {
-  
-  reveals.forEach(item => {
-    
-    const top = item.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-    
-    if (top < windowHeight - 100) {
-      
-      item.style.opacity = "1";
-      item.style.transform = "translateY(0)";
+window.onscroll = function () {
+
+    if(document.documentElement.scrollTop > 300){
+
+        topBtn.style.display = "block";
+
+    }else{
+
+        topBtn.style.display = "none";
+
     }
-    
-  });
-  
-}
 
-reveals.forEach(item => {
-  item.style.opacity = "0";
-  item.style.transform = "translateY(40px)";
-  item.style.transition = "0.8s ease";
-});
+};
 
-window.addEventListener("scroll", revealOnScroll);
-revealOnScroll();
+topBtn.onclick = function(){
 
+    window.scrollTo({
 
+        top:0,
+
+        behavior:"smooth"
+
+    });
+
+};
+
+// =====================
 // Active Navbar
+// =====================
+
 const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav ul li a");
+const navLinks = document.querySelectorAll(".nav-links a");
 
-window.addEventListener("scroll", () => {
-  
-  let current = "";
-  
-  sections.forEach(section => {
-    
-    const sectionTop = section.offsetTop - 150;
-    
-    if (pageYOffset >= sectionTop) {
-      current = section.getAttribute("id");
-    }
-    
-  });
-  
-  navLinks.forEach(link => {
-    
-    link.classList.remove("active");
-    
-    if (link.getAttribute("href") === "#" + current) {
-      link.classList.add("active");
-    }
-    
-  });
-  
-});
+window.addEventListener("scroll",()=>{
 
+let current="";
 
-// Smooth Button Effect
-document.querySelectorAll("a[href^='#']").forEach(anchor => {
-  
-  anchor.addEventListener("click", function(e) {
-    
-    e.preventDefault();
-    
-    const target = document.querySelector(this.getAttribute("href"));
-    
-    if (target) {
-      
-      target.scrollIntoView({
-        behavior: "smooth"
-      });
-      
-    }
-    
-  });
-  
-});
+sections.forEach(section=>{
 
+const top=section.offsetTop-150;
 
-// Profile Image Hover Glow
-const profile = document.querySelector(".hero-image img");
+if(pageYOffset>=top){
 
-if (profile) {
-  
-  profile.addEventListener("mouseenter", () => {
-    profile.style.boxShadow = "0 0 60px #00d4ff";
-  });
-  
-  profile.addEventListener("mouseleave", () => {
-    profile.style.boxShadow = "0 0 40px #00d4ff";
-  });
-  
+current=section.getAttribute("id");
+
 }
 
+});
 
+navLinks.forEach(link=>{
+
+link.classList.remove("active");
+
+if(link.getAttribute("href")=="#"+current){
+
+link.classList.add("active");
+
+}
+
+});
+
+});
+
+// =====================
+// Dark Mode
+// =====================
+
+const themeBtn =
+document.getElementById("theme-toggle");
+
+themeBtn.onclick=function(){
+
+document.body.classList.toggle("light-mode");
+
+};
+
+// =====================
+// Mobile Menu
+// =====================
+
+const menu =
+document.querySelector(".menu-toggle");
+
+const nav =
+document.querySelector(".nav-links");
+
+menu.onclick=function(){
+
+if(nav.style.display=="flex"){
+
+nav.style.display="none";
+
+}else{
+
+nav.style.display="flex";
+
+nav.style.flexDirection="column";
+
+}
+
+};
+
+// =====================
+// Hero Image Effect
+// =====================
+
+const image =
+document.querySelector(".hero-image img");
+
+image.addEventListener("mousemove",()=>{
+
+image.style.transform="scale(1.05)";
+
+});
+
+image.addEventListener("mouseleave",()=>{
+
+image.style.transform="scale(1)";
+
+});
+
+// =====================
 // Footer Year
-const footer = document.querySelector("footer p");
+// =====================
 
-if (footer) {
-  
-  footer.innerHTML =
-    `© ${new Date().getFullYear()} Krushna Chandre | Designed with ❤️`;
-  
-}
+const year =
+new Date().getFullYear();
+
+document.querySelector("footer p:last-child").innerHTML =
+"© "+year+" All Rights Reserved | Krushna Ravindra Chandre";
