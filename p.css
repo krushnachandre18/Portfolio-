@@ -137,49 +137,42 @@ color:#fff;
 
 }
 
+..menu-toggle{
+    display:none;
+    font-size:28px;
+    color:#fff;
+    cursor:pointer;
+}
+
+@media (max-width:900px){
+
+.menu-toggle{
+    display:block;
+}
+
 .nav-links{
+    display:none;
+    position:absolute;
+    top:70px;
+    right:20px;
+    width:220px;
+    background:#111;
+    border-radius:15px;
+    flex-direction:column;
+    padding:20px;
+    box-shadow:0 0 20px rgba(0,212,255,.4);
+}
 
-display:flex;
-
-list-style:none;
-
+.nav-links.active{
+    display:flex;
 }
 
 .nav-links li{
-
-margin-left:30px;
+    margin:12px 0;
+}
 
 }
 
-.nav-links li a{
-
-text-decoration:none;
-
-color:white;
-
-font-weight:500;
-
-transition:.3s;
-
-}
-
-.nav-links li a:hover,
-
-.nav-links li a.active{
-
-color:#00d4ff;
-
-}
-
-.menu-toggle{
-
-display:none;
-
-font-size:28px;
-
-cursor:pointer;
-
-}
 
 /* ===========================
 HERO
