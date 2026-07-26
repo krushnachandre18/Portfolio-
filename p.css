@@ -860,3 +860,26 @@ font-size:16px;
     background:#fff;
     color:#111;
 }
+@media (max-width:900px){
+
+.menu-toggle{
+    display:block;
+}
+
+.nav-links{
+    display:none;
+    position:absolute;
+    top:70px;
+    right:20px;
+    width:220px;
+    background:#111;
+    border-radius:15px;
+    flex-direction:column;
+    padding:20px;
+}
+
+.nav-links.active{
+    display:flex;
+}
+
+}
