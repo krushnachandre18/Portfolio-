@@ -185,6 +185,9 @@ cursor:pointer;
 HERO
 =========================== */
 
+body{
+    overflow-x:hidden;
+}
 .hero{
 
 min-height:100vh;
