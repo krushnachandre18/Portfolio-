@@ -106,12 +106,7 @@ topBtn.onclick = function(){
 // =====================
 // Active Navbar
 // =====================
-const menuToggle = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
 
-menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-});
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-links a");
 
@@ -212,4 +207,3 @@ new Date().getFullYear();
 
 document.querySelector("footer p:last-child").innerHTML =
 "© "+year+" All Rights Reserved | Krushna Ravindra Chandre";
-
