@@ -4,467 +4,331 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Krushna Chandre — Developer building modern digital experiences, websites and applications.">
+    <meta name="theme-color" content="#111111">
     <title>Krushna Chandre | KC18 Technologies</title>
-    <meta name="description" content="Krushna Chandre's portfolio featuring web development, frontend and backend technologies, and client projects.">
-    <meta name="theme-color" content="#0d1117">
-
-    <link rel="stylesheet" href="p.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="p.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
 
-    <!-- HEADER -->
     <header class="header">
-        <a href="#home" class="logo">KC<span>18</span></a>
+        <a href="#home" class="logo">KC<span>18.</span></a>
 
-        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
-            <i class="fas fa-bars"></i>
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation" aria-expanded="false">
+            <i data-lucide="menu"></i>
         </button>
 
         <nav class="nav-links" id="navLinks">
             <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#skills">Skills</a>
+            <a href="#skills">Expertise</a>
             <a href="#projects">Projects</a>
             <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact" class="nav-contact">Let's Talk <span>↗</span></a>
         </nav>
     </header>
 
     <main>
-
         <!-- HERO -->
         <section class="hero" id="home">
-            <div class="hero-content">
-                <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+            <div class="hero-content reveal">
+                <p class="eyebrow"><span class="eyebrow-line"></span> Independent Developer · India</p>
 
-                <h1>Hi, I'm <span>Krushna Chandre</span></h1>
-
-                <h2>Web Developer &amp; Computer Science Student</h2>
+                <h1>
+                    I BUILD<br>
+                    DIGITAL<br>
+                    <span class="outline-text">EXPERIENCES.</span>
+                </h1>
 
                 <p class="hero-description">
-                    I build responsive websites, explore full-stack development,
-                    and create practical digital solutions for businesses and individuals.
+                    I'm Krushna Chandre — a developer focused on building
+                    modern websites, useful applications and digital
+                    experiences that solve real problems.
                 </p>
 
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn">Explore Projects <i class="fas fa-arrow-right"></i></a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                <div class="hero-actions">
+                    <a href="#projects" class="button button-dark">
+                        Explore My Work <span>↗</span>
+                    </a>
+
+                    <a href="KRUSHNA%20CHANDRE_resume.pdf"
+                       class="button button-light"
+                       download="KRUSHNA CHANDRE_resume.pdf">
+                        <i data-lucide="download"></i> Download Resume
+                    </a>
                 </div>
 
-                <div class="social-links">
-                    <a href="https://github.com/krushnachandre18"
-                       target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/krushna-chandre-560908386"
-                       target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-
-                    <a href="https://www.instagram.com/krushna_chandre_18"
-                       target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
+                <div class="hero-meta">
+                    <span><span class="availability-dot"></span> Available for projects</span>
+                    <span>Based in Maharashtra, India</span>
                 </div>
             </div>
 
-            <!-- PROFILE PHOTO -->
-            <div class="hero-image">
-                <div class="profile-frame">
-                    <img
-                        src="profile.jpg"
-                        alt="Krushna Chandre"
-                        class="profile-image"
-                        width="400"
-                        height="500"
-                    >
-
-                    <div class="profile-caption">
-                        <span class="status-dot"></span>
-                        <div>
-                            <h3>Krushna Chandre</h3>
-                            <p>KC18 Technologies</p>
-                        </div>
-                    </div>
+            <div class="hero-visual reveal">
+                <div class="photo-number">01 / PROFILE</div>
+                <div class="photo-frame">
+                    <img src="images/krushna.jpg"
+                         alt="Krushna Chandre"
+                         class="profile-image">
+                    <div class="photo-overlay">KC18</div>
                 </div>
+                <div class="photo-caption">
+                    <span>KRUSHNA CHANDRE</span>
+                    <span>DEVELOPER / CREATOR</span>
+                </div>
+                <div class="photo-decoration"></div>
             </div>
+
+            <div class="hero-index">PORTFOLIO — 2026</div>
         </section>
 
+        <!-- MARQUEE -->
+        <div class="marquee" aria-label="Design, development, innovation">
+            <div class="marquee-track">
+                <span>DESIGN</span><b>✳</b><span>DEVELOPMENT</span><b>✳</b>
+                <span>INNOVATION</span><b>✳</b><span>DESIGN</span><b>✳</b>
+                <span>DEVELOPMENT</span><b>✳</b><span>INNOVATION</span><b>✳</b>
+            </div>
+        </div>
+
         <!-- ABOUT -->
-        <section id="about" class="section">
-            <div class="section-heading">
-                <p class="eyebrow">GET TO KNOW ME</p>
-                <h2>About <span>Me</span></h2>
+        <section class="section about-section" id="about">
+            <div class="section-top reveal">
+                <span class="section-number">01 — ABOUT</span>
+                <span class="section-note">A little about me</span>
             </div>
 
-            <div class="about-card">
-                <div class="about-icon"><i class="fas fa-laptop-code"></i></div>
+            <div class="about-layout">
+                <h2 class="section-title reveal">
+                    Not just code.<br>
+                    <span>Solutions that matter.</span>
+                </h2>
 
-                <div>
-                    <h3>Building Useful Digital Experiences</h3>
-
+                <div class="about-copy reveal">
                     <p>
-                        I am a final-year Bachelor of Computer Science student
-                        interested in web development, software engineering,
-                        programming, and AI-based applications.
+                        I'm a final-year Bachelor of Computer Science student
+                        at K. J. Somaiya College, interested in software
+                        development and building practical digital products.
                     </p>
-
                     <p>
                         I enjoy turning ideas into functional websites and
-                        learning new technologies through hands-on projects.
-                        My goal is to build reliable, accessible, and responsive
-                        digital experiences.
+                        applications, learning new technologies and solving
+                        problems through code.
                     </p>
-
-                    <p>
-                        Through KC18 Technologies, I aim to help businesses,
-                        educational institutions, and individuals establish
-                        their online presence.
-                    </p>
+                    <a href="#contact" class="text-link">Let's work together ↗</a>
                 </div>
             </div>
         </section>
 
         <!-- SKILLS -->
-        <section id="skills" class="section section-alt">
-            <div class="section-heading">
-                <p class="eyebrow">WHAT I WORK WITH</p>
-                <h2>Technical <span>Skills</span></h2>
-                <p>Frontend, backend, databases, and development tools.</p>
+        <section class="section skills-section" id="skills">
+            <div class="section-top reveal">
+                <span class="section-number">02 — EXPERTISE</span>
+                <span class="section-note">Tools I work with</span>
             </div>
 
+            <h2 class="section-title reveal">
+                My technical<br><span>toolkit.</span>
+            </h2>
+
             <div class="skills-grid">
-
-                <article class="skill-card">
-                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
-                    <h3>HTML5</h3>
-                    <p>Semantic markup and page structure</p>
-                    <span class="skill-type">Frontend</span>
+                <article class="skill-card reveal">
+                    <span class="skill-index">01</span>
+                    <i data-lucide="monitor" class="skill-icon"></i>
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, JavaScript, React.js</p>
                 </article>
 
-                <article class="skill-card">
-                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
-                    <h3>CSS3</h3>
-                    <p>Responsive layouts and styling</p>
-                    <span class="skill-type">Frontend</span>
+                <article class="skill-card reveal">
+                    <span class="skill-index">02</span>
+                    <i data-lucide="server" class="skill-icon"></i>
+                    <h3>Backend Development</h3>
+                    <p>Node.js, Express.js, REST APIs</p>
                 </article>
 
-                <article class="skill-card">
-                    <div class="skill-icon"><i class="fab fa-js"></i></div>
-                    <h3>JavaScript</h3>
-                    <p>Interactive web functionality</p>
-                    <span class="skill-type">Frontend</span>
+                <article class="skill-card reveal">
+                    <span class="skill-index">03</span>
+                    <i data-lucide="database" class="skill-icon"></i>
+                    <h3>Database</h3>
+                    <p>MySQL and database fundamentals</p>
                 </article>
 
-                <article class="skill-card">
-                    <div class="skill-icon"><i class="fab fa-react"></i></div>
-                    <h3>React.js</h3>
-                    <p>Reusable components and interfaces</p>
-                    <span class="skill-type">Frontend</span>
+                <article class="skill-card reveal">
+                    <span class="skill-index">04</span>
+                    <i data-lucide="code-2" class="skill-icon"></i>
+                    <h3>Programming</h3>
+                    <p>Java and Python</p>
                 </article>
 
-                <article class="skill-card">
-                    <div class="skill-icon"><i class="fab fa-node-js"></i></div>
-                    <h3>Node.js</h3>
-                    <p>JavaScript runtime for server-side applications</p>
-                    <span class="skill-type">Backend</span>
+                <article class="skill-card reveal">
+                    <span class="skill-index">05</span>
+                    <i data-lucide="git-branch" class="skill-icon"></i>
+                    <h3>Development Tools</h3>
+                    <p>Git, GitHub, VS Code</p>
                 </article>
 
-                <article class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-server"></i></div>
-                    <h3>Express.js</h3>
-                    <p>Backend routing and API fundamentals</p>
-                    <span class="skill-type">Backend</span>
-                </article>
-
-                <article class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-database"></i></div>
-                    <h3>MySQL</h3>
-                    <p>Relational databases and SQL queries</p>
-                    <span class="skill-type">Database</span>
-                </article>
-
-                <article class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-plug"></i></div>
-                    <h3>REST APIs</h3>
-                    <p>Client-server communication concepts</p>
-                    <span class="skill-type">Backend</span>
-                </article>
-
-                <article class="skill-card">
-                    <div class="skill-icon"><i class="fab fa-python"></i></div>
-                    <h3>Python</h3>
-                    <p>Programming and project development</p>
-                    <span class="skill-type">Programming</span>
-                </article>
-
-                <article class="skill-card">
-                    <div class="skill-icon"><i class="fab fa-java"></i></div>
-                    <h3>Java</h3>
-                    <p>Object-oriented programming fundamentals</p>
-                    <span class="skill-type">Programming</span>
-                </article>
-
-                <article class="skill-card">
-                    <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
-                    <h3>Git &amp; GitHub</h3>
-                    <p>Version control and project hosting</p>
-                    <span class="skill-type">Tools</span>
-                </article>
-
-                <article class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                <article class="skill-card reveal">
+                    <span class="skill-index">06</span>
+                    <i data-lucide="rocket" class="skill-icon"></i>
                     <h3>Deployment</h3>
-                    <p>Publishing websites and managing deployments</p>
-                    <span class="skill-type">Tools</span>
+                    <p>GitHub Pages and web deployment</p>
                 </article>
-
             </div>
         </section>
 
         <!-- PROJECTS -->
-        <section id="projects" class="section">
-            <div class="section-heading">
-                <p class="eyebrow">MY WORK</p>
-                <h2>Featured <span>Projects</span></h2>
-                <p>Selected projects and a live client website.</p>
+        <section class="section projects-section" id="projects">
+            <div class="section-top reveal">
+                <span class="section-number">03 — SELECTED WORK</span>
+                <span class="section-note">Ideas turned into projects</span>
             </div>
 
-            <div class="projects-grid">
+            <div class="projects-heading">
+                <h2 class="section-title reveal">
+                    Work that<br><span>speaks for itself.</span>
+                </h2>
+                <p class="reveal">A selection of projects I've worked on.</p>
+            </div>
 
-                <!-- CLIENT PROJECT -->
-                <article class="project-card featured-project">
-                    <span class="project-label">
-                        <i class="fas fa-briefcase"></i> CLIENT PROJECT
-                    </span>
+            <div class="projects-list">
 
-                    <div class="project-icon"><i class="fas fa-school"></i></div>
-
-                    <h3>Little Flower English Medium School</h3>
-
-                    <p>
-                        A website created for Little Flower English Medium
-                        School, Shaha, to present school information and
-                        provide a professional online presence.
-                    </p>
-
-                    <div class="tech-tags">
-                        <span>React.js</span>
-                        <span>JavaScript</span>
-                        <span>CSS</span>
-                        <span>Custom Domain</span>
+                <article class="project-card project-featured reveal">
+                    <div class="project-visual visual-school">
+                        <span class="visual-label">01 / LIVE WEBSITE</span>
+                        <i data-lucide="graduation-cap"></i>
+                        <span class="visual-word">EDUCATION</span>
                     </div>
-
-                    <a class="project-link"
-                       href="https://littleflowerenglishmediumschoolshaha.online/"
-                       target="_blank" rel="noopener noreferrer">
-                        Visit Live Website <i class="fas fa-arrow-up-right-from-square"></i>
-                    </a>
+                    <div class="project-info">
+                        <span class="project-category">CLIENT PROJECT · WEBSITE</span>
+                        <h3>School Website</h3>
+                        <p>
+                            A website created for Little Flower English Medium
+                            School, designed to present school information
+                            and provide a professional online presence.
+                        </p>
+                        <div class="project-tags">
+                            <span>React</span><span>CSS</span><span>Web Design</span>
+                        </div>
+                        <a href="https://littleflowerenglishmediumschoolshaha.online/"
+                           target="_blank" rel="noopener noreferrer"
+                           class="project-link">View Live Website ↗</a>
+                    </div>
                 </article>
 
-                <!-- BUG HUNTER -->
-                <article class="project-card">
-                    <span class="project-label">PERSONAL PROJECT</span>
-
-                    <div class="project-icon"><i class="fas fa-bug"></i></div>
-
-                    <h3>BugHunter AI</h3>
-
-                    <p>
-                        A programming project designed to help identify
-                        common coding errors and explore debugging assistance.
-                    </p>
-
-                    <div class="tech-tags">
-                        <span>Python</span>
-                        <span>Flask</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
+                <article class="project-card reveal">
+                    <div class="project-visual visual-bug">
+                        <span class="visual-label">02 / WEB APPLICATION</span>
+                        <i data-lucide="bug"></i>
+                        <span class="visual-word">BUGHUNTER</span>
                     </div>
-
-                    <a class="project-link"
-                       href="https://bughunter-ai-yfh0.onrender.com"
-                       target="_blank" rel="noopener noreferrer">
-                        View Project <i class="fas fa-arrow-up-right-from-square"></i>
-                    </a>
+                    <div class="project-info">
+                        <span class="project-category">PERSONAL PROJECT · AI</span>
+                        <h3>BugHunter AI</h3>
+                        <p>
+                            A code-analysis project built to identify common
+                            programming errors and help developers understand
+                            potential issues.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span><span>Flask</span><span>AI Concept</span>
+                        </div>
+                        <a href="https://bughunter-ai-yfh0.onrender.com"
+                           target="_blank" rel="noopener noreferrer"
+                           class="project-link">Explore Project ↗</a>
+                    </div>
                 </article>
 
-                <!-- PORTFOLIO -->
-                <article class="project-card">
-                    <span class="project-label">PERSONAL PROJECT</span>
-
-                    <div class="project-icon"><i class="fas fa-user-tie"></i></div>
-
-                    <h3>Portfolio Website</h3>
-
-                    <p>
-                        A responsive portfolio website showcasing my skills,
-                        projects, education, and contact details.
-                    </p>
-
-                    <div class="tech-tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>GitHub Pages</span>
+                <article class="project-card reveal">
+                    <div class="project-visual visual-portfolio">
+                        <span class="visual-label">03 / PERSONAL BRAND</span>
+                        <i data-lucide="layers"></i>
+                        <span class="visual-word">KC18 STUDIO</span>
                     </div>
-
-                    <a class="project-link"
-                       href="https://krushnachandre18.github.io/Portfolio-/"
-                       target="_blank" rel="noopener noreferrer">
-                        View Portfolio <i class="fas fa-arrow-up-right-from-square"></i>
-                    </a>
+                    <div class="project-info">
+                        <span class="project-category">PERSONAL PROJECT · PORTFOLIO</span>
+                        <h3>Developer Portfolio</h3>
+                        <p>
+                            My personal portfolio showcasing selected work,
+                            technical interests and my journey as a developer.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                        <a href="https://krushnachandre18.github.io/Portfolio-/"
+                           target="_blank" rel="noopener noreferrer"
+                           class="project-link">View Portfolio ↗</a>
+                    </div>
                 </article>
 
             </div>
         </section>
 
         <!-- EDUCATION -->
-        <section id="education" class="section section-alt">
-            <div class="section-heading">
-                <p class="eyebrow">MY ACADEMIC BACKGROUND</p>
-                <h2>My <span>Education</span></h2>
+        <section class="section education-section" id="education">
+            <div class="section-top reveal">
+                <span class="section-number">04 — EDUCATION</span>
+                <span class="section-note">My academic background</span>
             </div>
 
-            <div class="education-card">
-                <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h2 class="section-title reveal">
+                Learning is<br><span>part of the process.</span>
+            </h2>
 
+            <div class="education-card reveal">
+                <div class="education-year">CURRENT</div>
                 <div>
-                    <h3>Bachelor of Computer Science (BCS)</h3>
+                    <span class="education-label">BACHELOR'S DEGREE</span>
+                    <h3>Bachelor of Computer Science</h3>
                     <p>K. J. Somaiya College</p>
-                    <span>Final Year</span>
+                    <p class="education-description">Final Year · Computer Science</p>
                 </div>
+                <i data-lucide="graduation-cap"></i>
             </div>
         </section>
 
         <!-- CONTACT -->
-        <section id="contact" class="section">
-            <div class="section-heading">
-                <p class="eyebrow">LET'S CONNECT</p>
-                <h2>Contact <span>Me</span></h2>
-                <p>Have a project or website idea? Let's discuss it.</p>
-            </div>
+        <section class="contact-section" id="contact">
+            <div class="contact-inner reveal">
+                <span class="section-number">05 — CONTACT</span>
+                <p class="contact-kicker">HAVE A PROJECT IN MIND?</p>
+                <h2>Let's make<br><span>it happen.</span></h2>
+                <p class="contact-description">
+                    Interested in working together or discussing an idea?
+                    Find me through my professional profiles.
+                </p>
 
-            <div class="contact-grid">
-
-                <a class="contact-card" href="mailto:krushnachandre5448@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email</h3>
-                    <p>krushnachandre5448@gmail.com</p>
-                </a>
-
-                <a class="contact-card" href="tel:+918208912993">
-                    <i class="fas fa-phone"></i>
-                    <h3>Phone</h3>
-                    <p>+91 82089 12993</p>
-                </a>
-
-                <a class="contact-card"
-                   href="https://github.com/krushnachandre18"
-                   target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i>
-                    <h3>GitHub</h3>
-                    <p>Explore my projects</p>
-                </a>
-
-                <a class="contact-card"
-                   href="https://www.linkedin.com/in/krushna-chandre-560908386"
-                   target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-linkedin-in"></i>
-                    <h3>LinkedIn</h3>
-                    <p>Connect professionally</p>
-                </a>
-
+                <div class="contact-actions">
+                    <a href="https://www.linkedin.com/in/krushna-chandre-560908386"
+                       target="_blank" rel="noopener noreferrer"
+                       class="button button-white">Connect on LinkedIn ↗</a>
+                    <a href="https://github.com/krushnachandre"
+                       target="_blank" rel="noopener noreferrer"
+                       class="button button-transparent">GitHub ↗</a>
+                </div>
             </div>
         </section>
-
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer">
-        <a href="#home" class="footer-logo">KC<span>18</span> Technologies</a>
-
-        <p>Designed &amp; developed by Krushna Chandre.</p>
-
-        <p class="footer-phone">
-            <i class="fas fa-phone"></i>
-            <a href="tel:+918208912993">+91 82089 12993</a>
-        </p>
-
-        <div class="footer-socials">
-            <a href="https://github.com/krushnachandre18"
-               target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-
-            <a href="https://www.linkedin.com/in/krushna-chandre-560908386"
-               target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-
-            <a href="https://www.instagram.com/krushna_chandre_18"
-               target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
+        <a href="#home" class="footer-logo">KC18<span>.</span></a>
+        <p>Independent Developer · Building with purpose.</p>
+        <div class="footer-bottom">
+            <span>© <span id="year"></span> KC18 Technologies</span>
+            <a href="#home">Back to top ↑</a>
         </div>
-
-        <p class="copyright">
-            &copy; 2026 KC18 Technologies. All rights reserved.
-        </p>
     </footer>
 
-    <button id="topBtn" class="top-btn" aria-label="Back to top">
-        <i class="fas fa-arrow-up"></i>
+    <button class="top-btn" id="topBtn" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
     </button>
 
-    <!-- JAVASCRIPT -->
-    <script>
-        const menuToggle = document.getElementById("menuToggle");
-        const navLinks = document.getElementById("navLinks");
-        const topBtn = document.getElementById("topBtn");
-
-        // Mobile navigation
-        menuToggle.addEventListener("click", function () {
-            const isOpen = navLinks.classList.toggle("active");
-
-            menuToggle.setAttribute("aria-expanded", String(isOpen));
-
-            menuToggle.innerHTML = isOpen
-                ? '<i class="fas fa-times"></i>'
-                : '<i class="fas fa-bars"></i>';
-        });
-
-        // Close mobile menu after selecting a section
-        navLinks.querySelectorAll("a").forEach(function (link) {
-            link.addEventListener("click", function () {
-                navLinks.classList.remove("active");
-                menuToggle.setAttribute("aria-expanded", "false");
-                menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-            });
-        });
-
-        // Back to top
-        window.addEventListener("scroll", function () {
-            topBtn.classList.toggle("visible", window.scrollY > 300);
-        });
-
-        topBtn.addEventListener("click", function () {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        });
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
-```
