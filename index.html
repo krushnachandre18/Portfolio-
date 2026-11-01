@@ -5,513 +5,464 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Krushna Chandre | Web Developer & KC18 Technologies</title>
-
-    <meta name="description" content="Portfolio of Krushna Chandre, a web developer building responsive websites, web applications, and programming projects.">
-    <meta name="author" content="Krushna Chandre">
+    <title>Krushna Chandre | KC18 Technologies</title>
+    <meta name="description" content="Krushna Chandre's portfolio featuring web development, frontend and backend technologies, and client projects.">
+    <meta name="theme-color" content="#0d1117">
 
     <link rel="stylesheet" href="p.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header>
+    <!-- HEADER -->
+    <header class="header">
         <a href="#home" class="logo">KC<span>18</span></a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
 
         <nav class="nav-links" id="navLinks">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#certificates">Certificates</a>
             <a href="#education">Education</a>
             <a href="#contact">Contact</a>
         </nav>
-
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-        </button>
     </header>
 
     <main>
 
-        <!-- Home -->
-        <section id="home" class="hero" data-aos="fade-up">
+        <!-- HERO -->
+        <section class="hero" id="home">
             <div class="hero-content">
-                <p class="hero-intro">Hello, I'm</p>
+                <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
 
-                <h1>Krushna <span>Chandre</span></h1>
+                <h1>Hi, I'm <span>Krushna Chandre</span></h1>
 
-                <h2>Web Developer | Programmer</h2>
+                <h2>Web Developer &amp; Computer Science Student</h2>
 
-                <p>
-                    I build responsive websites, practical web applications,
-                    and digital solutions for businesses and individuals.
+                <p class="hero-description">
+                    I build responsive websites, explore full-stack development,
+                    and create practical digital solutions for businesses and individuals.
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn">Explore My Work</a>
+                    <a href="#projects" class="btn">Explore Projects <i class="fas fa-arrow-right"></i></a>
                     <a href="#contact" class="btn btn-outline">Contact Me</a>
                 </div>
 
                 <div class="social-links">
                     <a href="https://github.com/krushnachandre18"
-                       target="_blank" rel="noopener noreferrer"
-                       aria-label="GitHub">
+                       target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
 
                     <a href="https://www.linkedin.com/in/krushna-chandre-560908386"
-                       target="_blank" rel="noopener noreferrer"
-                       aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
+                       target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
                     </a>
 
                     <a href="https://www.instagram.com/krushna_chandre_18"
-                       target="_blank" rel="noopener noreferrer"
-                       aria-label="Instagram">
+                       target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </div>
             </div>
 
-           ```html
-<div class="hero-image">
-    <div class="profile-image-wrapper">
-        <img
-            src="images/krushna.jpg"
-            alt="Krushna Chandre - Web Developer"
-            class="profile-image"
-        >
+            <!-- PROFILE PHOTO -->
+            <div class="hero-image">
+                <div class="profile-frame">
+                    <img
+                        src="images/krushna.jpg"
+                        alt="Krushna Chandre"
+                        class="profile-image"
+                        width="400"
+                        height="500"
+                    >
 
-        <div class="profile-image-caption">
-            <h3>Krushna Chandre</h3>
-            <p>Web Developer | KC18 Technologies</p>
-        </div>
-    </div>
-</div>
-```
+                    <div class="profile-caption">
+                        <span class="status-dot"></span>
+                        <div>
+                            <h3>Krushna Chandre</h3>
+                            <p>KC18 Technologies</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- About -->
-        <section id="about" data-aos="fade-up">
-            <h2 class="heading">About <span>Me</span></h2>
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h2>About <span>Me</span></h2>
+            </div>
 
-            <div class="about-content">
-                <h3>Web Developer & Computer Science Student</h3>
+            <div class="about-card">
+                <div class="about-icon"><i class="fas fa-laptop-code"></i></div>
 
-                <p>
-                    I am a final-year BCS student interested in web development,
-                    software engineering, programming, and AI-based projects.
-                    I enjoy creating useful digital solutions and improving my
-                    technical skills through practical work.
-                </p>
+                <div>
+                    <h3>Building Useful Digital Experiences</h3>
 
-                <p>
-                    Through KC18 Technologies, I aim to build professional
-                    websites that help businesses, educational institutions,
-                    and individuals establish their online presence.
-                </p>
+                    <p>
+                        I am a final-year Bachelor of Computer Science student
+                        interested in web development, software engineering,
+                        programming, and AI-based applications.
+                    </p>
 
-                <a href="#contact" class="btn">Let's Connect</a>
+                    <p>
+                        I enjoy turning ideas into functional websites and
+                        learning new technologies through hands-on projects.
+                        My goal is to build reliable, accessible, and responsive
+                        digital experiences.
+                    </p>
+
+                    <p>
+                        Through KC18 Technologies, I aim to help businesses,
+                        educational institutions, and individuals establish
+                        their online presence.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <!-- Skills -->
-        <section id="skills" data-aos="fade-up">
-            <h2 class="heading">My <span>Skills</span></h2>
+        <!-- SKILLS -->
+        <section id="skills" class="section section-alt">
+            <div class="section-heading">
+                <p class="eyebrow">WHAT I WORK WITH</p>
+                <h2>Technical <span>Skills</span></h2>
+                <p>Frontend, backend, databases, and development tools.</p>
+            </div>
 
-            <div class="skills-container">
+            <div class="skills-grid">
 
-                <div class="card">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML</h3>
-                    <p>Website structure and semantic markup</p>
-                </div>
+                <article class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup and page structure</p>
+                    <span class="skill-type">Frontend</span>
+                </article>
 
-                <div class="card">
-                    <i class="fab fa-css3-alt"></i>
-                    <h3>CSS</h3>
-                    <p>Responsive layouts and visual design</p>
-                </div>
+                <article class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <h3>CSS3</h3>
+                    <p>Responsive layouts and styling</p>
+                    <span class="skill-type">Frontend</span>
+                </article>
 
-                <div class="card">
-                    <i class="fab fa-js"></i>
+                <article class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
                     <h3>JavaScript</h3>
-                    <p>Interactive website functionality</p>
-                </div>
+                    <p>Interactive web functionality</p>
+                    <span class="skill-type">Frontend</span>
+                </article>
 
-                <div class="card">
-                    <i class="fab fa-react"></i>
+                <article class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-react"></i></div>
                     <h3>React.js</h3>
-                    <p>Component-based user interfaces</p>
-                </div>
+                    <p>Reusable components and interfaces</p>
+                    <span class="skill-type">Frontend</span>
+                </article>
 
-                <div class="card">
-                    <i class="fab fa-python"></i>
+                <article class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                    <h3>Node.js</h3>
+                    <p>JavaScript runtime for server-side applications</p>
+                    <span class="skill-type">Backend</span>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-server"></i></div>
+                    <h3>Express.js</h3>
+                    <p>Backend routing and API fundamentals</p>
+                    <span class="skill-type">Backend</span>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>MySQL</h3>
+                    <p>Relational databases and SQL queries</p>
+                    <span class="skill-type">Database</span>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-plug"></i></div>
+                    <h3>REST APIs</h3>
+                    <p>Client-server communication concepts</p>
+                    <span class="skill-type">Backend</span>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
                     <h3>Python</h3>
                     <p>Programming and project development</p>
-                </div>
+                    <span class="skill-type">Programming</span>
+                </article>
 
-                <div class="card">
-                    <i class="fab fa-java"></i>
+                <article class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-java"></i></div>
                     <h3>Java</h3>
-                    <p>Object-oriented programming</p>
-                </div>
+                    <p>Object-oriented programming fundamentals</p>
+                    <span class="skill-type">Programming</span>
+                </article>
 
-                <div class="card">
-                    <i class="fas fa-database"></i>
-                    <h3>SQL</h3>
-                    <p>Database fundamentals and queries</p>
-                </div>
-
-                <div class="card">
-                    <i class="fab fa-git-alt"></i>
-                    <h3>Git & GitHub</h3>
+                <article class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                    <h3>Git &amp; GitHub</h3>
                     <p>Version control and project hosting</p>
-                </div>
+                    <span class="skill-type">Tools</span>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Deployment</h3>
+                    <p>Publishing websites and managing deployments</p>
+                    <span class="skill-type">Tools</span>
+                </article>
 
             </div>
         </section>
 
-        <!-- Projects -->
-        <section id="projects" data-aos="fade-up">
-            <h2 class="heading">My <span>Projects</span></h2>
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">MY WORK</p>
+                <h2>Featured <span>Projects</span></h2>
+                <p>Selected projects and a live client website.</p>
+            </div>
 
-            <div class="project-container">
+            <div class="projects-grid">
 
-                <!-- School Client Project -->
-                <div class="card client-project">
-                    <span class="project-category">
+                <!-- CLIENT PROJECT -->
+                <article class="project-card featured-project">
+                    <span class="project-label">
                         <i class="fas fa-briefcase"></i> CLIENT PROJECT
                     </span>
 
-                    <h3>
-                        <i class="fas fa-school"></i>
-                        Little Flower English Medium School
-                    </h3>
+                    <div class="project-icon"><i class="fas fa-school"></i></div>
+
+                    <h3>Little Flower English Medium School</h3>
 
                     <p>
-                        A website developed for Little Flower English Medium
-                        School, Shaha, to provide school information and
-                        establish a professional online presence.
+                        A website created for Little Flower English Medium
+                        School, Shaha, to present school information and
+                        provide a professional online presence.
                     </p>
 
-                    <div class="project-tech">
+                    <div class="tech-tags">
                         <span>React.js</span>
                         <span>JavaScript</span>
                         <span>CSS</span>
-                        <span>Responsive Design</span>
+                        <span>Custom Domain</span>
                     </div>
 
-                    <a href="https://littleflowerenglishmediumschoolshaha.online/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="project-btn">
-                        Live Website
-                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    <a class="project-link"
+                       href="https://littleflowerenglishmediumschoolshaha.online/"
+                       target="_blank" rel="noopener noreferrer">
+                        Visit Live Website <i class="fas fa-arrow-up-right-from-square"></i>
                     </a>
-                </div>
+                </article>
 
-                <!-- BugHunter AI -->
-                <div class="card">
-                    <h3><i class="fas fa-bug"></i> BugHunter AI</h3>
+                <!-- BUG HUNTER -->
+                <article class="project-card">
+                    <span class="project-label">PERSONAL PROJECT</span>
+
+                    <div class="project-icon"><i class="fas fa-bug"></i></div>
+
+                    <h3>BugHunter AI</h3>
 
                     <p>
-                        A programming project designed to help identify common
-                        coding errors and make debugging easier.
+                        A programming project designed to help identify
+                        common coding errors and explore debugging assistance.
                     </p>
 
-                    <div class="project-tech">
+                    <div class="tech-tags">
                         <span>Python</span>
                         <span>Flask</span>
                         <span>HTML</span>
                         <span>CSS</span>
                     </div>
 
-                    <a href="https://bughunter-ai-yfh0.onrender.com"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="project-btn">
-                        View Project
-                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    <a class="project-link"
+                       href="https://bughunter-ai-yfh0.onrender.com"
+                       target="_blank" rel="noopener noreferrer">
+                        View Project <i class="fas fa-arrow-up-right-from-square"></i>
                     </a>
-                </div>
+                </article>
 
-                <!-- Portfolio -->
-                <div class="card">
-                    <h3><i class="fas fa-user-tie"></i> Portfolio Website</h3>
+                <!-- PORTFOLIO -->
+                <article class="project-card">
+                    <span class="project-label">PERSONAL PROJECT</span>
+
+                    <div class="project-icon"><i class="fas fa-user-tie"></i></div>
+
+                    <h3>Portfolio Website</h3>
 
                     <p>
-                        My personal portfolio showcasing my skills, projects,
-                        education, and contact information.
+                        A responsive portfolio website showcasing my skills,
+                        projects, education, and contact details.
                     </p>
 
-                    <div class="project-tech">
+                    <div class="tech-tags">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
                         <span>GitHub Pages</span>
                     </div>
 
-                    <a href="https://krushnachandre18.github.io/Portfolio-/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="project-btn">
-                        View Portfolio
-                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    <a class="project-link"
+                       href="https://krushnachandre18.github.io/Portfolio-/"
+                       target="_blank" rel="noopener noreferrer">
+                        View Portfolio <i class="fas fa-arrow-up-right-from-square"></i>
                     </a>
-                </div>
+                </article>
 
             </div>
         </section>
 
-        <!-- Experience -->
-        <section id="experience" data-aos="fade-up">
-            <h2 class="heading">My <span>Experience</span></h2>
-
-            <div class="experience-container">
-
-                <div class="card">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Web Development</h3>
-                    <p>
-                        Practical experience creating website layouts,
-                        responsive pages, and client-focused web projects.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <i class="fas fa-code"></i>
-                    <h3>Programming Projects</h3>
-                    <p>
-                        Building programming projects to improve problem-solving,
-                        coding, and software development skills.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <i class="fas fa-building"></i>
-                    <h3>KC18 Technologies</h3>
-                    <p>
-                        Developing a professional brand focused on websites
-                        and digital solutions for businesses.
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Certificates -->
-        <section id="certificates" data-aos="fade-up">
-            <h2 class="heading">My <span>Certificates</span></h2>
-
-            <div class="certificate-container">
-
-                <div class="card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Python Programming</h3>
-                    <p>Programming fundamentals and Python concepts.</p>
-                </div>
-
-                <div class="card">
-                    <i class="fas fa-globe"></i>
-                    <h3>Web Development</h3>
-                    <p>Website development and frontend technologies.</p>
-                </div>
-
-                <div class="card">
-                    <i class="fas fa-brain"></i>
-                    <h3>Artificial Intelligence</h3>
-                    <p>Learning AI concepts and practical applications.</p>
-                </div>
-
+        <!-- EDUCATION -->
+        <section id="education" class="section section-alt">
+            <div class="section-heading">
+                <p class="eyebrow">MY ACADEMIC BACKGROUND</p>
+                <h2>My <span>Education</span></h2>
             </div>
 
-            <p class="section-note">
-                Add certificate images or verification links here when available.
-            </p>
-        </section>
+            <div class="education-card">
+                <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
 
-        <!-- Education -->
-        <section id="education" data-aos="fade-up">
-            <h2 class="heading">My <span>Education</span></h2>
-
-            <div class="education-container">
-                <div class="edu-card">
-                    <i class="fas fa-graduation-cap"></i>
+                <div>
                     <h3>Bachelor of Computer Science (BCS)</h3>
                     <p>K. J. Somaiya College</p>
-                    <p>Final Year</p>
+                    <span>Final Year</span>
                 </div>
             </div>
         </section>
 
-        <!-- Contact -->
-        <section id="contact" data-aos="fade-up">
-            <h2 class="heading">Contact <span>Me</span></h2>
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">LET'S CONNECT</p>
+                <h2>Contact <span>Me</span></h2>
+                <p>Have a project or website idea? Let's discuss it.</p>
+            </div>
 
-            <p class="contact-intro">
-                Have a website idea or project? Get in touch to discuss it.
-            </p>
+            <div class="contact-grid">
 
-            <div class="contact-container">
-
-                <div class="card contact-card">
+                <a class="contact-card" href="mailto:krushnachandre5448@gmail.com">
                     <i class="fas fa-envelope"></i>
                     <h3>Email</h3>
-                    <a href="mailto:krushnachandre5448@gmail.com">
-                        krushnachandre5448@gmail.com
-                    </a>
-                </div>
+                    <p>krushnachandre5448@gmail.com</p>
+                </a>
 
-                <div class="card contact-card">
+                <a class="contact-card" href="tel:+918208912993">
                     <i class="fas fa-phone"></i>
                     <h3>Phone</h3>
-                    <a href="tel:+918208912993">+91 82089 12993</a>
-                </div>
+                    <p>+91 82089 12993</p>
+                </a>
 
-                <div class="card contact-card">
-                    <i class="fab fa-linkedin"></i>
-                    <h3>LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/krushna-chandre-560908386"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        Connect with me
-                    </a>
-                </div>
-
-                <div class="card contact-card">
+                <a class="contact-card"
+                   href="https://github.com/krushnachandre18"
+                   target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github"></i>
                     <h3>GitHub</h3>
-                    <a href="https://github.com/krushnachandre18"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        View repositories
-                    </a>
-                </div>
+                    <p>Explore my projects</p>
+                </a>
+
+                <a class="contact-card"
+                   href="https://www.linkedin.com/in/krushna-chandre-560908386"
+                   target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin-in"></i>
+                    <h3>LinkedIn</h3>
+                    <p>Connect professionally</p>
+                </a>
 
             </div>
         </section>
 
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <h3>Krushna Ravindra Chandre</h3>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="#home" class="footer-logo">KC<span>18</span> Technologies</a>
 
-        <p>Thanks for visiting my portfolio ❤️</p>
+        <p>Designed &amp; developed by Krushna Chandre.</p>
 
-        <p>
-            Designed &amp; Developed by
-            <strong class="brand-name">KC18 Technologies</strong>
-        </p>
-
-        <p class="footer-contact">
+        <p class="footer-phone">
             <i class="fas fa-phone"></i>
             <a href="tel:+918208912993">+91 82089 12993</a>
         </p>
 
         <div class="footer-socials">
             <a href="https://github.com/krushnachandre18"
-               target="_blank" rel="noopener noreferrer"
-               aria-label="GitHub">
+               target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <i class="fab fa-github"></i>
             </a>
 
             <a href="https://www.linkedin.com/in/krushna-chandre-560908386"
-               target="_blank" rel="noopener noreferrer"
-               aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
+               target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
             </a>
 
             <a href="https://www.instagram.com/krushna_chandre_18"
-               target="_blank" rel="noopener noreferrer"
-               aria-label="Instagram">
+               target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <i class="fab fa-instagram"></i>
             </a>
         </div>
 
         <p class="copyright">
-            &copy; 2026 KC18 Technologies. All Rights Reserved.
+            &copy; 2026 KC18 Technologies. All rights reserved.
         </p>
     </footer>
 
-    <!-- Back to Top -->
     <button id="topBtn" class="top-btn" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
+    <!-- JAVASCRIPT -->
     <script>
-        // Initialize animations
-        if (typeof AOS !== "undefined") {
-            AOS.init({
-                duration: 800,
-                once: true,
-                offset: 80
-            });
-        }
-
-        // Mobile navigation
         const menuToggle = document.getElementById("menuToggle");
         const navLinks = document.getElementById("navLinks");
-
-        if (menuToggle && navLinks) {
-            menuToggle.addEventListener("click", function () {
-                navLinks.classList.toggle("active");
-
-                const icon = menuToggle.querySelector("i");
-
-                if (icon) {
-                    icon.classList.toggle("fa-bars");
-                    icon.classList.toggle("fa-times");
-                }
-            });
-
-            navLinks.querySelectorAll("a").forEach(function (link) {
-                link.addEventListener("click", function () {
-                    navLinks.classList.remove("active");
-
-                    const icon = menuToggle.querySelector("i");
-
-                    if (icon) {
-                        icon.classList.add("fa-bars");
-                        icon.classList.remove("fa-times");
-                    }
-                });
-            });
-        }
-
-        // Back-to-top button
         const topBtn = document.getElementById("topBtn");
 
-        if (topBtn) {
-            window.addEventListener("scroll", function () {
-                topBtn.style.display = window.scrollY > 300 ? "block" : "none";
-            });
+        // Mobile navigation
+        menuToggle.addEventListener("click", function () {
+            const isOpen = navLinks.classList.toggle("active");
 
-            topBtn.addEventListener("click", function () {
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
-                });
+            menuToggle.setAttribute("aria-expanded", String(isOpen));
+
+            menuToggle.innerHTML = isOpen
+                ? '<i class="fas fa-times"></i>'
+                : '<i class="fas fa-bars"></i>';
+        });
+
+        // Close mobile menu after selecting a section
+        navLinks.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                navLinks.classList.remove("active");
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
             });
-        }
+        });
+
+        // Back to top
+        window.addEventListener("scroll", function () {
+            topBtn.classList.toggle("visible", window.scrollY > 300);
+        });
+
+        topBtn.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
     </script>
 
 </body>
