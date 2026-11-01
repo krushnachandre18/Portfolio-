@@ -1,209 +1,79 @@
-// =====================
-// Loading Screen
-// =====================
 
-window.addEventListener("load", () => {
-    const loader = document.getElementById("loader");
+// Mobile Navigation
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
 
-    setTimeout(() => {
-        loader.style.opacity = "0";
-        loader.style.visibility = "hidden";
-    }, 1000);
+menuToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("active");
+
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation" : "Open navigation"
+    );
+
+    menuToggle.innerHTML = isOpen
+        ? '<i data-lucide="x"></i>'
+        : '<i data-lucide="menu"></i>';
+
+    if (window.lucide) lucide.createIcons();
 });
 
-// =====================
-// Typing Animation
-// =====================
+// Close menu after clicking a navigation link
+navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation");
+        menuToggle.innerHTML = '<i data-lucide="menu"></i>';
 
-const words = [
-    "Python Developer",
-    "Web Developer",
-    "AI Enthusiast",
-    "Software Engineer"
-];
+        if (window.lucide) lucide.createIcons();
+    });
+});
 
-let wordIndex = 0;
-let charIndex = 0;
-let deleting = false;
+// Scroll reveal animation
+const revealElements = document.querySelectorAll(".reveal");
 
-const typing = document.getElementById("typing");
-
-function type() {
-
-    if (!typing) return;
-
-    let current = words[wordIndex];
-
-    if (!deleting) {
-
-        typing.textContent =
-        current.substring(0, charIndex++);
-
-        if (charIndex > current.length) {
-            deleting = true;
-
-            setTimeout(type, 1200);
-
-            return;
-        }
-
-    } else {
-
-        typing.textContent =
-        current.substring(0, charIndex--);
-
-        if (charIndex < 0) {
-
-            deleting = false;
-
-            wordIndex++;
-
-            if (wordIndex == words.length)
-                wordIndex = 0;
-
-        }
-
-    }
-
-    setTimeout(type, deleting ? 60 : 120);
-
-}
-
-type();
-
-// =====================
-// Scroll To Top
-// =====================
-
-const topBtn = document.getElementById("topBtn");
-
-window.onscroll = function () {
-
-    if(document.documentElement.scrollTop > 300){
-
-        topBtn.style.display = "block";
-
-    }else{
-
-        topBtn.style.display = "none";
-
-    }
-
-};
-
-topBtn.onclick = function(){
-
-    window.scrollTo({
-
-        top:0,
-
-        behavior:"smooth"
-
+if ("IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.12
     });
 
-};
-
-// =====================
-// Active Navbar
-// =====================
-
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".nav-links a");
-
-window.addEventListener("scroll",()=>{
-
-let current="";
-
-sections.forEach(section=>{
-
-const top=section.offsetTop-150;
-
-if(pageYOffset>=top){
-
-current=section.getAttribute("id");
-
+    revealElements.forEach(element => {
+        revealObserver.observe(element);
+    });
+} else {
+    revealElements.forEach(element => {
+        element.classList.add("show");
+    });
 }
 
+// Back to top button
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", () => {
+    topBtn.classList.toggle("visible", window.scrollY > 400);
 });
 
-navLinks.forEach(link=>{
+topBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
 
-link.classList.remove("active");
+// Dynamic copyright year
+document.getElementById("year").textContent =
+    new Date().getFullYear();
 
-if(link.getAttribute("href")=="#"+current){
-
-link.classList.add("active");
-
+// Initialize icons
+if (window.lucide) {
+    lucide.createIcons();
 }
-
-});
-
-});
-
-// =====================
-// Dark Mode
-// =====================
-
-const themeBtn =
-document.getElementById("theme-toggle");
-
-themeBtn.onclick=function(){
-
-document.body.classList.toggle("light-mode");
-
-};
-
-// =====================
-// Mobile Menu
-// =====================
-
-const menu =
-document.querySelector(".menu-toggle");
-
-const nav =
-document.querySelector(".nav-links");
-
-menu.onclick=function(){
-
-if(nav.style.display=="flex"){
-
-nav.style.display="none";
-
-}else{
-
-nav.style.display="flex";
-
-nav.style.flexDirection="column";
-
-}
-
-};
-
-// =====================
-// Hero Image Effect
-// =====================
-
-const image =
-document.querySelector(".hero-image img");
-
-image.addEventListener("mousemove",()=>{
-
-image.style.transform="scale(1.05)";
-
-});
-
-image.addEventListener("mouseleave",()=>{
-
-image.style.transform="scale(1)";
-
-});
-
-// =====================
-// Footer Year
-// =====================
-
-const year =
-new Date().getFullYear();
-
-document.querySelector("footer p:last-child").innerHTML =
-"© "+year+" All Rights Reserved | Krushna Ravindra Chandre";
