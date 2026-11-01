@@ -1020,3 +1020,14 @@ button {
         transform: none;
     }
 }
+
+/* VISIBILITY FIX */
+.reveal {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: none;
+}
